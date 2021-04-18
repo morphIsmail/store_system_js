@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Магазин</title>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="goods_box" id="goods">
+      <div class="menu">
+        <input type="text" placeholder="Поиск" class="search">
+        <button class="add btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">&#10010;</button>
+      </div>
+      <table class="goods" id="table1">
+        <thead>
+          <tr>
+            <th data-type="number">№</th>
+            <th data-type="string">Название</th>
+            <th data-type="number">Цена, &#8381;</th>
+            <th data-type="number">Количество</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="list">
+          <!-- Строки с товарами -->
+        </tbody>     
+      </table>
+    </div>
+    <div class="price_box">
+      <div class="menu">
+       <div class="price_title">Итого: <span class="price_result">0 &#8381;</span></div>
+      </div>
+      <table class="price" id="table2">
+        <thead>
+          <tr>
+            <th data-type="number">№</th>
+            <th data-type="string">Название</th>
+            <th data-type="number">Цена/ш, &#8381;</th>
+            <th data-type="number">Количество</th>
+            <th>Скидка, %</th>
+            <th data-type="number">Цена, &#8381;</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="cart">
+          <!-- Строки с товарами в корзине -->
+        </tbody>     
+      </table>
+    </div>
+  </div>
+
+  <!-- Модальное окно бдобавление товара -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Добавить товар</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <button class="btn btn-secondary mb-3">Обновить с сервера</button><br>
+          <label for="good_name" class="form-label">Название товара</label>
+          <input type="text" class="form-control mb-3" id="good_name" maxlength="40">
+          <label for="good_price" class="form-label">Цена</label>
+          <input type="number" class="form-control mb-3" id="good_price">
+          <label for="good_count" class="form-label">Количество</label>
+          <input type="number" class="form-control mb-3" id="good_count" min="1" value="1">
+          <button type="submit" class="add_new btn btn-success">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/list.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

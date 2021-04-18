@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Calibri', sans-serif;
+  font-size: 18px;
+}
+body {
+  margin: 0;
+  padding: 30px 0 0 0;
+}
+input {
+  height: 40px;
+  width: 300px;
+  margin-right: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+}
+.price_discount input {
+  width: 70px;
+}
+button.add,
+button.good_delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.container {
+  padding: 15px 0;
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+}
+/* Товары */
+.menu {
+  /* background-color: #eee; */
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.price_title,
+.price_title span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+.goods_box, .price_box {
+  width: 50%;
+}
+.goods {
+  width: 100%;
+}
+caption {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+th {
+  cursor: pointer;
+  padding: 15px;
+  text-align: center;
+}
+tr {
+  height: 30px;
+}
+td {
+  padding: 15px;
+  text-align: center;
+}
+.good, .price_good {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}

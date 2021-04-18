@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,50 +9,62 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Магазин</title>
 </head>
+
 <body>
-  
+
   <div class="container">
-    <div class="goods_box" id="goods">
-      <div class="menu">
-        <input type="text" placeholder="Поиск" class="search">
-        <button class="add btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">&#10010;</button>
+    <div class="row">
+      <div class="col-xs-12 col-xxl-5">
+        <div class="goods_box" id="goods">
+          <div class="menu">
+            <input type="text" placeholder="Поиск" class="search">
+            <button class="add btn-success" type="button" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">&#10010;</button>
+          </div>
+          <div class="table-responsive">
+            <table class="goods table mt-3" id="table1">
+              <thead>
+                <tr class="table-primary align-middle">
+                  <th data-type="number">№</th>
+                  <th data-type="string">Название</th>
+                  <th data-type="number">Цена, &#8381;</th>
+                  <th data-type="number">Количество</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="list">
+                <!-- Строки с товарами -->
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-      <table class="goods" id="table1">
-        <thead>
-          <tr>
-            <th data-type="number">№</th>
-            <th data-type="string">Название</th>
-            <th data-type="number">Цена, &#8381;</th>
-            <th data-type="number">Количество</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody class="list">
-          <!-- Строки с товарами -->
-        </tbody>     
-      </table>
-    </div>
-    <div class="price_box">
-      <div class="menu">
-       <div class="price_title">Итого: <span class="price_result">0 &#8381;</span></div>
+      <div class="col-xs-12 col-xxl-7">
+        <div class="price_box">
+          <div class="menu">
+            <div class="price_title">Итого: <span class="price_result">0 &#8381;</span></div>
+          </div>
+          <div class="table-responsive">
+            <table class="price table mt-3" id="table2">
+              <thead>
+                <tr class="table-primary align-middle">
+                  <th data-type="number">№</th>
+                  <th data-type="string">Название</th>
+                  <th data-type="number">Цена/ш, &#8381;</th>
+                  <th data-type="number">Количество</th>
+                  <th>Скидка, %</th>
+                  <th data-type="number">Цена, &#8381;</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="cart">
+                <!-- Строки с товарами в корзине -->
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-      <table class="price" id="table2">
-        <thead>
-          <tr>
-            <th data-type="number">№</th>
-            <th data-type="string">Название</th>
-            <th data-type="number">Цена/ш, &#8381;</th>
-            <th data-type="number">Количество</th>
-            <th>Скидка, %</th>
-            <th data-type="number">Цена, &#8381;</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody class="cart">
-          <!-- Строки с товарами в корзине -->
-        </tbody>     
-      </table>
     </div>
   </div>
 
@@ -83,4 +96,5 @@
   <script src="js/list.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -87,7 +87,7 @@ function update_goods() {
     for(let i=0; i<goods.length; i++) {
       tbody.insertAdjacentHTML('beforeend',
       `
-      <tr>
+      <tr class="align-middle">
         <td>${i+1}</td>
         <td class="name">${goods[i][1]}</td>
         <td class="price">${goods[i][2]}</td>
@@ -103,15 +103,15 @@ function update_goods() {
         result_price += goods[i][6]
         document.querySelector('.cart').insertAdjacentHTML('beforeend',
         `
-        <tr>
-            <td>${i+1}</td>
-            <td class="price_name">${goods[i][1]}</td>
-            <td class="price_one">${goods[i][2]}</td>
-            <td class="price_count">${goods[i][4]}</td>
-            <td class="price_discount"><input data-goodid="${goods[i][0]}" type="text" value="${goods[i][5]}" min="0" max="100"></td>
-            <td>${goods[i][6]}</td>
-            <td><button class="good_delete btn-danger" data-delete="${goods[i][0]}">&#10006;</button></td>
-          </tr>
+        <tr class="align-middle">
+          <td>${i+1}</td>
+          <td class="price_name">${goods[i][1]}</td>
+          <td class="price_one">${goods[i][2]}</td>
+          <td class="price_count">${goods[i][4]}</td>
+          <td class="price_discount"><input data-goodid="${goods[i][0]}" type="text" value="${goods[i][5]}" min="0" max="100"></td>
+          <td>${goods[i][6]}</td>
+          <td><button class="good_delete btn-danger" data-delete="${goods[i][0]}">&#10006;</button></td>
+        </tr>
         `)
       }
     }

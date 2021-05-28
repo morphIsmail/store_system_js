@@ -44,6 +44,7 @@ button.good_delete {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 .price_title,
 .price_title span {
